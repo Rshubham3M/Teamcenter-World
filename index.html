@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teamcenter & CAD Learning Hub: An interactive training portal for BMIDE data modeling, ITK development, Active Workspace, and free CAD development tools.">
+    <title>Teamcenter & CAD Developer Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand-section">
+                <span class="brand-icon">⚡</span>
+                <h1 class="brand-name">TC-CAD Hub</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-tab="tab-dashboard" id="nav-dashboard">
+                    <span>🏠</span> Dashboard
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-roadmap" id="nav-roadmap">
+                    <span>🗺️</span> Learning Roadmap
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-generators" id="nav-generators">
+                    <span>💻</span> Code Generators
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-downloads" id="nav-downloads">
+                    <span>🛠️</span> Tools Download
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-assessment" id="nav-assessment">
+                    <span>🎓</span> Assessment Portal
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-badge">
+                    <div class="github-avatar">GH</div>
+                    <div>
+                        <p style="font-weight: 600; color: var(--text-primary);">GitHub Portal Ready</p>
+                        <p style="font-size: 0.75rem;">Static Site Hosting</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Dashboard -->
+        <main class="content-area">
+            
+            <!-- Tab 1: Dashboard -->
+            <section id="tab-dashboard" class="tab-pane active">
+                <h2 class="main-header">Welcome to Teamcenter & CAD Developer Hub</h2>
+                <p class="sub-header">Your interactive gateway to learning Siemens Teamcenter Customization and downloading CAD developer utilities.</p>
+
+                <div class="custom-alert">
+                    <span class="custom-alert-icon">💡</span>
+                    <div class="custom-alert-text">
+                        <strong>Deployment Note:</strong> Since you have a GitHub account, you can push this entire directory to a public GitHub repository and enable <strong>GitHub Pages</strong> in the settings to host this website live for free!
+                    </div>
+                </div>
+
+                <div class="grid-container">
+                    <div class="custom-card">
+                        <div class="card-title">📚 Interactive Training</div>
+                        <p class="card-desc">Follow structured paths covering BMIDE configurations, server-side ITK programming, client-side AWC, and SOA services.</p>
+                        <a href="#" class="btn btn-secondary" onclick="document.getElementById('nav-roadmap').click();">Explore Roadmap</a>
+                    </div>
+                    <div class="custom-card">
+                        <div class="card-title">⚙️ Code Generators</div>
+                        <p class="card-desc">Save time with instant template generators for BMIDE schemas, workflow handlers, and AWC stylesheets.</p>
+                        <a href="#" class="btn btn-secondary" onclick="document.getElementById('nav-generators').click();">Try Generators</a>
+                    </div>
+                    <div class="custom-card purple-hover">
+                        <div class="card-title">💾 Download Utilities</div>
+                        <p class="card-desc">Access free command-line switcher files, XML schema checkers, and CAD file batch converters.</p>
+                        <a href="#" class="btn btn-purple" onclick="document.getElementById('nav-downloads').click();">Browse Tools</a>
+                    </div>
+                </div>
+
+                <div class="section-header">Developer Best Practices</div>
+                <div class="grid-container">
+                    <div class="custom-card">
+                        <div class="card-title"><span style="color: var(--accent-cyan);">✓</span> Namespace Safety</div>
+                        <p class="card-desc" style="font-size: 0.85rem;">Always prepend a 2-4 character unique prefix (e.g., <code>d4_</code>) to custom business objects and attributes in BMIDE. This prevents namespace conflicts during Teamcenter patch upgrades.</p>
+                    </div>
+                    <div class="custom-card">
+                        <div class="card-title"><span style="color: var(--accent-purple);">✓</span> Error Handling</div>
+                        <p class="card-desc" style="font-size: 0.85rem;">In C++ ITK APIs, never ignore return statuses. Verify that every function call returns <code>ITK_ok</code>, otherwise clean up allocated system memory using <code>SAFE_SM_FREE()</code> to prevent server crashes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 2: Roadmap -->
+            <section id="tab-roadmap" class="tab-pane">
+                <h2 class="main-header">Curriculum Roadmap</h2>
+                <p class="sub-header">A complete structured learning path for PLM developers and CAD engineers.</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Stage 1: Core Data Modeling (BMIDE)</h3>
+                            <p class="timeline-desc">Master the Business Modeler IDE. Learn to create business objects, extend default properties (attributes), build LOVs (List of Values), and configure validation rules.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Stage 2: Server-Side Customization (ITK)</h3>
+                            <p class="timeline-desc">Dive into the Integration Toolkit (ITK) using C/C++. Learn to code custom workflow Action Handlers (for automating transitions) and Rule Handlers (for gating conditions).</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Stage 3: Client-Side rendering (AWC XML)</h3>
+                            <p class="timeline-desc">Customize Siemens Active Workspace Client (AWC). Work with stylesheet renderers, modify command layouts, bind attributes to custom columns, and display datasets.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Stage 4: Service-Oriented Architecture (SOA)</h3>
+                            <p class="timeline-desc">Build web service clients. Use the SOA APIs in C# or Java to connect external client systems, migrate CAD files, and update properties remotely.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 3: Code Generators -->
+            <section id="tab-generators" class="tab-pane">
+                <h2 class="main-header">Interactive Code Generators</h2>
+                <p class="sub-header">Choose a configuration template, input your variables, and get production-ready code blocks.</p>
+
+                <div class="generator-layout">
+                    <!-- Form Controls -->
+                    <div class="custom-card">
+                        <div class="form-group">
+                            <label class="form-label" for="genSelect">Select Generator</label>
+                            <select id="genSelect" class="form-control">
+                                <option value="bmide">BMIDE XML Schema</option>
+                                <option value="itk">ITK C++ Handler</option>
+                                <option value="awc">AWC Tab Stylesheet</option>
+                            </select>
+                        </div>
+
+                        <!-- BMIDE Form -->
+                        <div id="formBmide">
+                            <div class="form-group">
+                                <label class="form-label" for="bmidePrefix">Schema Prefix</label>
+                                <input type="text" id="bmidePrefix" class="form-control" value="d4" placeholder="e.g. custom prefix">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="bmideName">Business Object Name</label>
+                                <input type="text" id="bmideName" class="form-control" value="EquipmentRevision">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="bmideParent">Parent Object</label>
+                                <select id="bmideParent" class="form-control">
+                                    <option value="ItemRevision">ItemRevision</option>
+                                    <option value="Design Revision">Design Revision</option>
+                                    <option value="Dataset">Dataset</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="bmideDisplay">Display Label</label>
+                                <input type="text" id="bmideDisplay" class="form-control" value="Equipment Revision">
+                            </div>
+                        </div>
+
+                        <!-- ITK Form -->
+                        <div id="formItk" style="display: none;">
+                            <div class="form-group">
+                                <label class="form-label" for="itkHandlerType">Handler Type</label>
+                                <select id="itkHandlerType" class="form-control">
+                                    <option value="action">Action Handler (Execution)</option>
+                                    <option value="rule">Rule Handler (Validation)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="itkFuncName">Function Name</label>
+                                <input type="text" id="itkFuncName" class="form-control" value="validateCadRevision">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="itkErrorMsg">Error Warning Message</label>
+                                <input type="text" id="itkErrorMsg" class="form-control" value="CAD metadata is mismatched!">
+                            </div>
+                        </div>
+
+                        <!-- AWC Form -->
+                        <div id="formAwc" style="display: none;">
+                            <div class="form-group">
+                                <label class="form-label" for="awcLayout">Layout Structure</label>
+                                <select id="awcLayout" class="form-control">
+                                    <option value="single">Single Column List</option>
+                                    <option value="dual">Dual Columns (Properties + Files)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="awcTabName">AWC Tab Display Title</label>
+                                <input type="text" id="awcTabName" class="form-control" value="CAD Parameters">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="awcFieldPrefix">Object Prefix filter</label>
+                                <input type="text" id="awcFieldPrefix" class="form-control" value="d4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Display -->
+                    <div class="code-output-container">
+                        <div class="code-header">
+                            <span class="code-title">GENERATED OUTPUT</span>
+                            <button id="btnCopyCode" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">📋 Copy</button>
+                        </div>
+                        <pre class="code-pre"><code id="generatedCode"></code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 4: Downloads -->
+            <section id="tab-downloads" class="tab-pane">
+                <h2 class="main-header">Free Utility Tools</h2>
+                <p class="sub-header">Download free standalone scripts and helpers to boost your Teamcenter and CAD development.</p>
+
+                <div class="grid-container">
+                    <div class="custom-card download-card">
+                        <div>
+                            <div class="card-title">🔄 Environment Switcher</div>
+                            <p class="card-desc">A command-line script (<code>.bat</code>) that prompts you to select Dev, QA, or Production environments, sets system variables, and sources <code>tc_profilevars</code> automatically.</p>
+                        </div>
+                        <div class="download-footer">
+                            <span class="file-info">tc-env-switcher.bat (1.8 KB)</span>
+                            <button class="btn btn-primary btn-download" data-file="tc-env-switcher.bat">⬇️ Download</button>
+                        </div>
+                    </div>
+
+                    <div class="custom-card download-card">
+                        <div>
+                            <div class="card-title">🔍 BMIDE Schema Checker</div>
+                            <p class="card-desc">A Python checker utility that scans custom BMIDE templates to ensure all customized business objects and attributes comply with your naming conventions.</p>
+                        </div>
+                        <div class="download-footer">
+                            <span class="file-info">bmide-xml-helper.py (3.2 KB)</span>
+                            <button class="btn btn-primary btn-download" data-file="bmide-xml-helper.py">⬇️ Download</button>
+                        </div>
+                    </div>
+
+                    <div class="custom-card download-card purple-hover">
+                        <div>
+                            <div class="card-title">📐 CAD DXF Metadata Extractor</div>
+                            <p class="card-desc">A Python command-line tool that parses standard DXF drawing files and extracts layers, blocks, circles, and bounding coordinate sizes to a JSON report.</p>
+                        </div>
+                        <div class="download-footer">
+                            <span class="file-info">cad-dxf-converter.py (4.5 KB)</span>
+                            <button class="btn btn-purple btn-download" data-file="cad-dxf-converter.py">⬇️ Download</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 5: Assessment -->
+            <section id="tab-assessment" class="tab-pane">
+                <h2 class="main-header">Training Assessment</h2>
+                <p class="sub-header">Test your knowledge of Teamcenter BMIDE, ITK APIs, and workflow layouts.</p>
+
+                <div class="quiz-container">
+                    <!-- Quiz Start -->
+                    <div id="quizIntro" class="quiz-card text-center" style="text-align: center;">
+                        <span style="font-size: 3rem;">📝</span>
+                        <h3 style="font-size: 1.5rem; margin: 1rem 0;">Ready for the Challenge?</h3>
+                        <p class="card-desc">The assessment comprises 5 random multiple-choice questions covering BMIDE, ITK, and AWC configurations. You must score 70% or higher to earn a Certificate of Accomplishment.</p>
+                        <button id="btnStartQuiz" class="btn btn-purple" style="margin-top: 1rem;">Start Assessment</button>
+                    </div>
+
+                    <!-- Quiz Content -->
+                    <div id="quizContent" class="quiz-card" style="display: none;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-secondary);">
+                            <span id="questionCount">Question 1 of 5</span>
+                            <span class="badge badge-purple">TC Core</span>
+                        </div>
+                        <h3 id="questionText" class="question-text">Question loading...</h3>
+                        <ul id="optionsList" class="options-list">
+                            <!-- JS loaded -->
+                        </ul>
+                        <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+                            <button id="btnPrevQuestion" class="btn btn-secondary">← Back</button>
+                            <button id="btnNextQuestion" class="btn btn-primary">Next →</button>
+                            <button id="btnSubmitQuiz" class="btn btn-purple" style="display: none;">Submit Quiz</button>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Results -->
+                    <div id="quizResults" class="quiz-card" style="display: none; text-align: center;">
+                        <span style="font-size: 3.5rem;">🏆</span>
+                        <h3 style="font-size: 1.8rem; margin: 1rem 0;">Assessment Completed</h3>
+                        <div id="scoreValue" style="font-size: 4rem; font-weight: 800; color: var(--accent-cyan); margin: 1rem 0;">0%</div>
+                        <p id="scoreText" class="card-desc" style="font-size: 1.05rem; margin-bottom: 2rem;"></p>
+                        
+                        <div id="certSection" class="cert-section" style="display: none;">
+                            <div class="form-group" style="max-width: 300px; width: 100%;">
+                                <label class="form-label">Name on Certificate</label>
+                                <input type="text" id="certNameInput" class="form-control" placeholder="Enter your full name" style="text-align: center;">
+                            </div>
+                            <button id="btnGenerateCert" class="btn btn-primary">🎨 Generate Certificate</button>
+                            
+                            <div class="cert-canvas-wrapper" style="margin-top: 1.5rem;">
+                                <canvas id="certCanvas" width="800" height="550"></canvas>
+                            </div>
+                            <button id="btnDownloadCert" class="btn btn-purple" style="display: none; margin-top: 1rem;">⬇️ Download Certificate (PNG)</button>
+                        </div>
+
+                        <div style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+                            <button id="btnRestartQuiz" class="btn btn-secondary">Try Again</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
