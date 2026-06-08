@@ -31,6 +31,9 @@
                 <a href="#" class="nav-item" data-tab="tab-assessment" id="nav-assessment">
                     <span>🎓</span> Assessment Portal
                 </a>
+                <a href="#" class="nav-item" data-tab="tab-contact" id="nav-contact">
+                    <span>✉️</span> Contact & Support
+                </a>
             </nav>
             <div class="sidebar-footer">
                 <div class="user-badge">
@@ -313,6 +316,57 @@
                             <button id="btnRestartQuiz" class="btn btn-secondary">Try Again</button>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Tab 6: Contact & Support -->
+            <section id="tab-contact" class="tab-pane">
+                <h2 class="main-header">Contact & Support</h2>
+                <p class="sub-header">Get in touch for specialized Teamcenter customization, CAD integration, and premium consulting services.</p>
+
+                <div class="grid-container">
+                    <!-- Inquiry Card -->
+                    <div class="custom-card">
+                        <div class="card-title">💼 Paid Services & Support</div>
+                        <p class="card-desc">Need custom BMIDE schema design, complex ITK handler development, Active Workspace custom stylesheets, or CAD API integrations? I offer professional, end-to-end consulting services.</p>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="mailto:rshubham.3m@gmail.com?subject=Teamcenter/CAD%20Paid%20Services%20Inquiry" class="btn btn-purple" style="text-decoration: none;">
+                                ✉️ Email Me: rshubham.3m@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Details Card -->
+                    <div class="custom-card">
+                        <div class="card-title">🛠️ Services Offered</div>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem; padding-left: 0;">
+                            <li>✔️ <strong>BMIDE</strong> Data Model Configuration & Upgrades</li>
+                            <li>✔️ <strong>ITK (C/C++)</strong> & <strong>SOA</strong> Custom Server Customization</li>
+                            <li>✔️ <strong>Active Workspace</strong> UI Stylesheet Rendering & Configurations</li>
+                            <li>✔️ <strong>CAD Integrations</strong> (NX, SolidWorks, AutoCAD, etc.)</li>
+                            <li>✔️ Production System Support & Performance Troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form Mock/Mailto Trigger -->
+                <div class="section-header">Send an Inquiry</div>
+                <div class="custom-card" style="max-width: 600px; margin-bottom: 2rem;">
+                    <form id="contactForm" onsubmit="sendEmail(event)">
+                        <div class="form-group">
+                            <label class="form-label" for="contactName">Your Name</label>
+                            <input type="text" id="contactName" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" class="form-control" required placeholder="BMIDE / ITK Customization Support">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contactMessage">Project Details / Message</label>
+                            <textarea id="contactMessage" class="form-control" rows="5" required placeholder="Describe your Teamcenter or CAD integration requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">📧 Send Message</button>
+                    </form>
                 </div>
             </section>
         </main>
