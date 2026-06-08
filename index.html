@@ -352,18 +352,27 @@
                 <!-- Contact Form Mock/Mailto Trigger -->
                 <div class="section-header">Send an Inquiry</div>
                 <div class="custom-card" style="max-width: 600px; margin-bottom: 2rem;">
-                    <form id="contactForm" onsubmit="sendEmail(event)">
+                    <form id="contactForm" action="https://formsubmit.co/rshubham.3m@gmail.com" method="POST">
+                        <!-- Custom redirection page after submission -->
+                        <input type="hidden" name="_next" value="https://Rshubham3M.github.io/Teamcenter-World/">
+                        <!-- Disable Captcha check -->
+                        <input type="hidden" name="_captcha" value="false">
+                        
                         <div class="form-group">
                             <label class="form-label" for="contactName">Your Name</label>
-                            <input type="text" id="contactName" class="form-control" required placeholder="John Doe">
+                            <input type="text" id="contactName" name="name" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contactEmail">Your Email Address</label>
+                            <input type="email" id="contactEmail" name="email" class="form-control" required placeholder="you@example.com">
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="contactSubject">Subject</label>
-                            <input type="text" id="contactSubject" class="form-control" required placeholder="BMIDE / ITK Customization Support">
+                            <input type="text" id="contactSubject" name="_subject" class="form-control" required placeholder="BMIDE / ITK Customization Support">
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="contactMessage">Project Details / Message</label>
-                            <textarea id="contactMessage" class="form-control" rows="5" required placeholder="Describe your Teamcenter or CAD integration requirements..."></textarea>
+                            <textarea id="contactMessage" name="message" class="form-control" rows="5" required placeholder="Describe your Teamcenter or CAD integration requirements..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">📧 Send Message</button>
                     </form>

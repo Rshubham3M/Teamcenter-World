@@ -681,21 +681,3 @@ function generateCertificateCanvas(studentName) {
         };
     }
 }
-
-/* --- Contact Page Form Handler --- */
-function sendEmail(e) {
-    e.preventDefault();
-    const name = document.getElementById('contactName').value.trim();
-    const subject = document.getElementById('contactSubject').value.trim();
-    const message = document.getElementById('contactMessage').value.trim();
-
-    const recipient = 'rshubham.3m@gmail.com';
-    const emailBody = `Hello Shubham,
-
-My name is ${name}.
-
-${message}`;
-
-    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-    window.location.href = mailtoUrl;
-}
